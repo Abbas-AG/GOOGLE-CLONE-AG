@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -82,3 +83,260 @@
   </script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Google</title>
+  <!-- style -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      margin: 0;
+    }
+
+    #navdiv {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 20px 8px 8px;
+      background-color: #fff;
+    }
+
+    #links-container a {
+      color: #1a0dab;
+      text-decoration: none;
+      margin-right: 10px;
+    }
+
+    #links-container a:hover {
+      text-decoration: underline;
+    }
+
+    #navdiv a {
+      color: #3c4043;
+      text-decoration: none;
+    }
+
+    #sign-in-container {
+      margin-left: 16px; 
+    }
+
+    #googleimg {
+      display: block;
+      margin: 170px auto 50px;
+      width: 272px;
+      height: 92px;
+    }
+
+    #maindiv {
+      display: flex;
+      justify-content: center;
+    }
+
+    #inputspan {
+      position: relative;
+      border: 1px solid #cfcfcf;
+      border-radius: 24px;
+      padding: 10px 14px;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    #inputspan input {
+      border: none;
+      outline: none;
+      font-size: 16px;
+      width: 500px;
+      padding-left: 30px; 
+    }
+
+    #search-button {
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    #search-button img {
+      width: 15px;
+      height: 15px;
+    }
+
+    section {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    #inputspan:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    #search-button {
+      position: absolute;
+      top: 50%;
+      left: 10px; 
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    section button {
+      background-color: #f8f9fa;
+      border: 1px solid #f8f9fa;
+      border-radius: 4px;
+      color: #5f6368;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      margin: 11px 4px;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    section button:hover {
+      border: 1px solid #c7c7c7;
+      box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+      color: #222;
+    }
+
+    #sign-in-button,
+    #sign-in-button:link,
+    #sign-in-button:visited,
+    #sign-in-button:hover,
+    #sign-in-button:active,
+    #sign-in-button:focus {
+      background-color: #006dd9;
+      border: 1px solid #f8f9fa;
+      border-radius: 6px;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 14px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .footer1, .footer2 {
+      padding: 1px 1.5em; 
+      background: #f7f7f7;
+      display: flex;
+      justify-content: center;
+    }
+
+    .footer1 {
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+      justify-content: flex-start; 
+    }
+
+    footer ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      align-items: center;
+    }
+
+    footer li {
+      margin: 0 10px;
+    }
+
+    footer a {
+      text-decoration: none;
+      color: #70757a;
+      font-size: 13px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<!-- body -->
+<body>
+  <nav>
+    <div id="navdiv">
+      <div id="links-container">
+        <a href="https://mail.google.com/">Gmail</a>
+        <a href="#" onclick="redirectToAdvancedHtml(); return false;">Advanced</a>
+        <a href="#" onclick="redirectToImgHtml(); return false;">Images</a>
+      </div>
+      <div id="sign-in-container">
+        <a href="https://www.google.com/accounts/Login" id="sign-in-button">Sign In</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <img src="google_logo.png" id="googleimg" alt="Google">
+    <div id="maindiv">
+      <form id="search-form" action="https://www.google.com/search" method="GET">
+        <span id="inputspan">
+          <input type="text" name="q" aria-label="Search">
+          <button id="search-button" type="submit">
+            <img src="icon.png" alt="Search">
+          </button>
+        </span>
+      </form>
+    </div>
+    <section>
+      <button type="submit" form="search-form">Google Search</button>
+      <button type="button" onclick="window.location.href='https://www.google.com/doodles'">
+        I'm Feeling Lucky
+      </button>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer1">
+      <ul>
+        <li><a href="#">Iraq</a></li>
+      </ul>
+    </div>
+    <div class="footer2">
+      <ul>
+        <li><a href="#">Advertising</a></li>
+        <li><a href="#">Business</a></li>
+        <li><a href="#">How Search Works</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </div>
+  </footer>
+<!-- script -->
+  <script>
+    function redirectToAdvancedHtml() {
+      window.location.href = 'advanced.html';
+    }
+
+    function redirectToImgHtml() {
+      window.location.href = 'img.html';
+    }
+
+    window.onload = function() {
+      var input = document.querySelector('input[name="q"]');
+      var inputspan = document.getElementById('inputspan');
+
+      input.addEventListener('focus', function() {
+        inputspan.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.3)';
+      });
+
+      input.addEventListener('blur', function() {
+        inputspan.style.boxShadow = '';
+      });
+    };
+  </script>
+</body>
+</html>
+>>>>>>> 3e611f3de530f6d7593682fc1550cd018279512c
