@@ -167,3 +167,26 @@ footer {
     flex-wrap: wrap;
     align-items: flex-start;
 }
+
+
+
+.input_item1, .input_item2, .input_item3, .input_item4 {
+    display: flex;
+}
+
+.input_item1 input, .input_item2 input, .input_item3 input, .input_item4 input {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+
+.input_item1 span, .input_item2 span, .input_item3 span, .input_item4 span {
+    margin-left: 10px;
+    white-space: nowrap;
+    flex-basis: 419px;  
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    
+}
+
