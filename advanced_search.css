@@ -122,7 +122,7 @@ input:focus {
 
 .button {   
     grid-area: button;  
-    justify-self: end;
+    margin-left: 27.53%;
 }
 
 .button > input { 
@@ -134,6 +134,7 @@ input:focus {
     border-radius: 3px;
     background-color: #387ae6;
     width: 120px;
+  
 }
 
 .button > input:hover {
@@ -183,6 +184,7 @@ footer {
 
 .input_item1 span, .input_item2 span, .input_item3 span, .input_item4 span {
     margin-left: 10px;
+    margin-right: 39%;
     white-space: nowrap;
     flex-basis: 419px;  
     overflow: hidden;
